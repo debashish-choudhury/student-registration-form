@@ -1,0 +1,124 @@
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: #f2f2f2}
+* {box-sizing: border-box;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height: 30px;    
+}
+input[type=submit] {
+  background-color: #e7e7e7;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  margin-bottom: 20px;    
+}
+
+input[type=submit]:hover {
+  background-color: #e7e7e7;
+}
+
+.container {
+  width: 50%;	
+  margin: auto;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.container_disp {
+  width: 90%;	
+  margin: auto;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.titled {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;   
+  font-weight: 100;
+  margin-top: 20px;
+  color: black;
+    }    
+
+.labels{
+    font-family: sans-serif;
+  font-size: 15px;   
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+    text-align: center;
+    }
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #8D2828;
+  color: white;
+}
+
+#details {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+    }
+
+#details td, #details th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#details td:first-child {
+  font-weight: bold;
+    width: 50%;
+}
+#details tr:nth-child(even){background-color: #ffffff;}
+
+#details tr:hover {background-color: #ffffff;}
+
+#details th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #8D2828;
+  color: white;
+}
+
+.button {
+  background-color: #8D2828;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    width: 300px;
+}

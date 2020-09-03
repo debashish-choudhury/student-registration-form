@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Add Student</title>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+ </head>
+ <body>
+  <br />
+  <div class="container_disp">
+    <form method="post">
+     <h3 align="center" class="titled">Search A Student</h3>
+     <br />
+      <label>Student ID</label>
+      <input type="text" name="studentId" placeholder="Enter ID" class="form-control" value="{{ studentID }}" />
+     <center> <input type="submit" name="submit" class="btn" value="Submit" /></center>
+    </form>
+  {% if info %}
+  <p>{{ info }}</p>
+  {% else %}
+      {% if row_data %}
+    <table id="details">
+        {% for i in range(length) %}
+        <tr>
+            <td>{{column_names[i]}}</td>
+            <td>{{row_data[i]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+<p>No record found!</p>
+{% endif %}
+  {% endif %}
+  </div>
+ </body>
+</html>

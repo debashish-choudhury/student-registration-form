@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Add Student</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+     <style>
+         input[type=email] {
+             width: 100%;
+             padding: 12px;
+             border: 1px solid #ccc;
+             border-radius: 4px;
+             box-sizing: border-box;
+             margin-top: 6px;
+             margin-bottom: 16px;
+             resize: vertical;
+             height: 30px;
+         }
+     </style>
+</head>
+ <body>
+  <br />
+  <div class="container">
+   <div class="col-md-6" style="margin:0 auto; float:none;">
+    <form method="post">
+     <h3 align="center" class="titled">Add Student Form</h3>
+     <br />
+      <label>Student ID</label><br>
+      <input type="text" name="id" placeholder="Enter ID" required />
+
+      <label>Student Name</label><br>
+      <input type="text" name="name" placeholder="Enter Name" required />
+    
+      <label>Gender</label><br>
+{#     <input type="checkbox" name="gender" value="male" required>Male<br>#}
+{#     <input type="checkbox" name="gender" value="female" required>Female<br>#}
+        <input type="Radio" name="gender" value="Male" required>Male <br>
+        <input type="Radio" name="gender" value="Female" required>Female
+     <br>
+     <br>
+      <label>Date Of Birth</label><br>
+      <input type="date" name="dob" placeholder="Enter Date" required /><br><br>
+
+      <label>City</label><br>
+      <input type="text" name="city" placeholder="Enter City" required />
+
+      <label>State</label><br>
+      <input type="text" name="state" placeholder="Enter State" class="form-control" required />
+
+      <label>Email</label><br>
+      <input type="email" class="emailField" name="email" placeholder="Enter Email" required />
+    
+      <label>Qualification</label><br>
+      <input type="text" name="qualification" placeholder="Enter Qualification" required />
+    
+      <label>Stream</label><br>
+      <input type="text" name="stream" placeholder="Enter Stream" required />
+    
+      <center><input type="submit" name="submit" value="Submit" /></center>
+
+    </form>
+   </div>
+  </div>
+ </body>
+</html>
