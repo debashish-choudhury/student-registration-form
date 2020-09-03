@@ -1,6 +1,8 @@
 # Student Registration Form
 ## Description
 This is a simple demonstration on how we can store information in CSV file using **flask** and perform actions like **filter students, display all the available students or register new students**.
+
+Server-side & Backend Developed by:
 - **Debashish Choudhury** (http://github.com/deb1398)
 
 Front-end Developed by:
